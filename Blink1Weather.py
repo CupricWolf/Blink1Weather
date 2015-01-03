@@ -41,7 +41,7 @@ def sunIsUp():
 # Unfortunatly, some of the stuff that should be under the atmosphere group show up as their own main condition.
 # Therefore I'm keeping the recording functionality to catch any other oddities like this.
 
-if (condition == "Atmosphere") or (condition == "Haze") or (condition == "Mist"): # Haze and Mist should have shown up as Atmosphere, I don't know why they didnt't, Atmosphere is from the list.
+if (condition == "Atmosphere") or (condition == "Fog") or (condition == "Haze") or (condition == "Mist"): # Haze and Mist should have shown up as Atmosphere, I don't know why they didnt't, Atmosphere is from the list.
 	# Yellow
 	red = 255
 	green = 255
