@@ -10,7 +10,7 @@ from subprocess import call
 
 # Variables
 localUnknownTypesFile = "/path/to/unknownTypes/file"
-url = "http://api.openweathermap.org/data/2.5/weather?q=CityName"
+url = "http://api.openweathermap.org/data/2.5/weather?id=0000&APPID=11111"
 red = 0
 green = 0
 blue = 0
