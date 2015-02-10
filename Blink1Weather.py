@@ -4,14 +4,13 @@ import urllib.request
 import json
 from subprocess import call
 
-# This script is run every 10 minutes by a cron job.
+# This script is run every 15 minutes by a cron job.
 # It changes the color of the Blink1 according to the weather returned by the open weather map api.
 # At night the colors aren't as bright so that the tool isn't disruptive to sleep.
 
 # Variables
 localUnknownTypesFile = "/path/to/unknownTypes/file"
 url = "http://api.openweathermap.org/data/2.5/weather?q=CityName"
-# url = "http://api.openweathermap.org/data/2.5/weather?lat=123&lon=123"
 red = 0
 green = 0
 blue = 0
