@@ -20,10 +20,9 @@ NIGHT_BRIGHTNESS_DIVISOR = 4 # Color settings are divided by this number at nigh
 
 # Parses API call to python dict
 webFile = str(urllib.request.urlopen(weatherApiUrl).read())[2:-3]
-webFile = webFile.replace("[","").replace("]","") # Clean up the extra array around the weather object
 jsonObject = json.loads(webFile)
 
-condition = str(jsonObject["weather"]["main"])
+condition = str(jsonObject["weather"][0]["main"])
 print("Condition is: " + condition)
 
 # Parse sun up and sun down times and function for if sun is up
@@ -62,7 +61,7 @@ elif (condition == "Drizzle"): # From List
 	# Cyan
 	redSetting = 0
 	greenSetting = 255
-	blueSetting = 255	
+	blueSetting = 255
 elif (condition == "Extreme"): # From List
 	# Red
 	redSetting = 255
